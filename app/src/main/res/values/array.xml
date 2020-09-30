@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+      <string-array name="carType">
+        <item>小型汽车</item>
+        <item>中型汽车</item>
+        <item>大型汽车</item>
+        <item>挂车</item>
+        <item>炼金术士</item>
+        <item>黑暗游侠</item>
+        <item>暗夜魔王</item>
+        <item>末日使者</item>
+        <item>剑圣</item>
+        <item>斧王</item>
+    </string-array>   
+</resources>

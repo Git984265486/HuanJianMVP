@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="item_blue_color">#5BC0DE</color>
+    <color name="colorPrimaryLight">#4c9bdc</color>
+    <color name="colorRed">#ff0000</color>
+    <color name="bootstrap_alert_cross_default">#64818a91</color>
+    <color name="bootstrap_brand_danger">#d9534f</color>
+    <color name="bootstrap_brand_info">#5bc0de</color>
+    <color name="bootstrap_brand_primary">#0275d8</color>
+    <color name="bootstrap_brand_secondary_border">#cccccc</color>
+    <color name="bootstrap_brand_secondary_fill">#ffffff</color>
+    <color name="bootstrap_brand_secondary_text">#373a3c</color>
+    <color name="bootstrap_brand_success">#5cb85c</color>
+    <color name="bootstrap_brand_warning">#f0ad4e</color>
+    <color name="bootstrap_dropdown_divider">#e7e7e7</color>
+    <color name="bootstrap_edittext_disabled">#ffe0e0e0</color>
+    <color name="bootstrap_gray">#55595c</color>
+    <color name="bootstrap_gray_dark">#373a3c</color>
+    <color name="bootstrap_gray_light">#818a91</color>
+    <color name="bootstrap_gray_lighter">#eceeef</color>
+</resources>

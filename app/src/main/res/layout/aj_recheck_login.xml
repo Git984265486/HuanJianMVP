@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bootstrap_brand_info"
+    tools:context="com.org.huanjianmvp.Activity.AJRecheckLogin">
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询条件"
+        android:enabled="false"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="lg"
+        app:buttonMode="regular"
+        app:roundedCorners="false"
+        app:showOutline="false" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_button_background"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textColor="@color/bootstrap_gray_dark"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                android:text="车牌号码"/>
+            <!--    popupBackground:下拉背景色   -->
+            <!--    overlapAnchor="false"弹出框不遮挡内容   -->
+            <Spinner
+                android:id="@+id/recheckLoginCarProvince"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/blue_button_background"
+                android:overlapAnchor="false"
+                >
+            </Spinner>
+            <EditText
+                android:id="@+id/recheckLoginCarNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/bootstrap_gray_dark"
+                android:layout_weight="3"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_button_background"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textColor="@color/bootstrap_gray_dark"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                android:text="号牌种类"/>
+            <Spinner
+                android:id="@+id/recheckLoginCarType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:background="@drawable/blue_button_background"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:overlapAnchor="false">
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_button_background"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textColor="@color/bootstrap_gray_dark"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                android:text="车辆识别代号"/>
+            <EditText
+                android:id="@+id/recheckLoginCarID"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/bootstrap_gray_dark"
+                android:layout_weight="4"/>
+        </LinearLayout>
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/recheckLoginFind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="查找车辆"
+            app:bootstrapBrand="success"
+            app:bootstrapSize="md"
+            app:buttonMode="regular"
+            app:roundedCorners="false"
+            app:showOutline="false" />
+    </LinearLayout>
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="不合格项目"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="lg"
+        app:buttonMode="regular"
+        app:roundedCorners="false"
+        app:showOutline="false" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="是否强制路试:"
+                    android:textColor="@color/colorRed"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:id="@+id/forceCheck"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/forceCheckY"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="是"
+                        android:textColor="@color/colorRed" />
+
+                    <RadioButton
+                        android:id="@+id/forceCheckN"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="否"
+                        android:textColor="@color/colorRed" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.beardedhen.androidbootstrap.BootstrapButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:enabled="false"
+                        android:text="PDA检测"
+                        app:bootstrapBrand="primary"
+                        app:bootstrapSize="md"
+                        app:buttonMode="regular"
+                        app:roundedCorners="false"
+                        app:showOutline="false" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recheckPDAContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <com.beardedhen.androidbootstrap.BootstrapButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:enabled="false"
+                        android:text="仪器检测"
+                        app:bootstrapBrand="primary"
+                        app:bootstrapSize="md"
+                        app:buttonMode="regular"
+                        app:roundedCorners="false"
+                        app:showOutline="false" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recheckInstrument"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        />
+
+                </LinearLayout>
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:id="@+id/recheckLoginBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="提交数据"
+                    app:bootstrapBrand="success"
+                    app:bootstrapSize="md"
+                    app:buttonMode="regular"
+                    app:roundedCorners="false"
+                    app:showOutline="false" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--    app设置页面布局    -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/blue_button_background"
+    tools:context="com.org.huanjianmvp.Activity.Setting">
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="设置参数"
+        android:enabled="false"
+        android:layout_marginBottom="5dp"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="lg"
+        app:buttonMode="regular"
+        app:roundedCorners="false"
+        app:showOutline="false" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/editTextIP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="请在此输入IP地址"
+            app:met_floatingLabel="normal"
+            app:met_floatingLabelText="请在此输入IP地址:"
+            app:met_helperText="请确认IP地址以及端口号正确"
+            app:met_clearButton="true"
+            app:met_primaryColor="@color/bootstrap_brand_primary" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/editTextFTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="请输入FTP地址"
+            app:met_floatingLabel="normal"
+            app:met_floatingLabelText="请在此输入FTP地址:"
+            app:met_helperText="请确认FTP地址正确:"
+            app:met_clearButton="true"
+            app:met_primaryColor="@color/bootstrap_brand_primary" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="请输入检测站编号"
+            app:met_floatingLabel="normal"
+            app:met_floatingLabelText="请在此输入检测站编号:"
+            app:met_helperText="请确认检测站编号正确:"
+            app:met_clearButton="true"
+            app:met_primaryColor="@color/bootstrap_brand_primary" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/editTextDispatch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="请填写上线调度地址"
+            app:met_floatingLabel="normal"
+            app:met_floatingLabelText="请填写上线调度地址:"
+            app:met_helperText="请确认上线调度地址正确:"
+            app:met_clearButton="true"
+            app:met_primaryColor="@color/bootstrap_brand_primary" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/bootstrap_gray_dark"
+                android:textSize="18sp"
+                android:text="请输入检验机构检测线代号:" />
+            <EditText
+                android:id="@+id/editTextCheckNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/bootstrap_gray_dark"
+                android:text="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/bootstrap_gray_dark"
+                android:layout_marginTop="8dp"
+                android:textSize="18sp"
+                android:text="请选择图片上传方式:" />
+
+            <Spinner
+                android:id="@+id/uploadType"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/bootstrap_brand_info"
+                android:popupBackground="#818a91"
+                android:overlapAnchor="false"/>
+        </LinearLayout>
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/settingSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:text="保存配置"
+            app:bootstrapBrand="success"
+            app:bootstrapSize="xl"
+            app:buttonMode="regular"
+            app:roundedCorners="true"
+            app:showOutline="false" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

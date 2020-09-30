@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.org.huanjianmvp">
+
+    <!-- versionName在app的versionName中修改 -->
+
+
+    <!-- 允许程序打开网络套接字 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- 允许程序访问有关GSM网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- 从SDCard读出数据权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!--允许程序访问Wi-Fi网络状态信息-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- 相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- 允许修改话机状态，如电源，人机接口等 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!--    android:usesCleartextTraffic="true" -->
+    <application
+        android:name=".BootApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        tools:replace="icon">
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.ListDatas" />
+        <activity android:name=".Activity.Function" />
+        <activity android:name=".Activity.Setting" />
+        <activity android:name=".Activity.InspectionAndPhotograph" />
+        <!--<activity android:name=".Activity.Inspection" />-->
+        <!--<activity android:name=".Activity.Photograph" />-->
+        <activity android:name=".Activity.MenuSetting" />
+        <activity android:name=".Activity.AJCheckAndPhotoAndBaseInfo" />
+        <!--<activity android:name=".Activity.AJCheck" />-->
+        <!--<activity android:name=".Activity.AJPhoto" />-->
+        <!--<activity android:name=".Activity.AJBaseInfo" />-->
+        <activity android:name=".Activity.ImageShow" />
+        <activity android:name=".Activity.AJVehicleListAndInitLoginAndRecheckLogin" />
+        <!--<activity android:name=".Activity.AJVehicleList" />-->
+        <!--<activity android:name=".Activity.AJInitLogin" />-->
+        <!--<activity android:name=".Activity.AJRecheckLogin" />-->
+        <activity android:name=".Activity.Chassis"></activity>
+    </application>
+
+</manifest>

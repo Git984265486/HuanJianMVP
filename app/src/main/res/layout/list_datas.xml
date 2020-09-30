@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--    数据展示页面布局  -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/blue_button_background"
+
+    tools:context="com.org.huanjianmvp.Activity.ListDatas">
+
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="车辆列表"
+        android:enabled="false"
+        android:layout_marginBottom="5dp"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="lg"
+        app:buttonMode="regular"
+        app:roundedCorners="false"
+        app:showOutline="false" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/editTextFind"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="4dp"
+            android:hint="请输入查找信息"
+            app:met_clearButton="true"
+            app:met_primaryColor="@color/bootstrap_brand_primary" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/btnFind"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="8dp"
+            android:text="查找"
+            app:bootstrapBrand="success"
+            app:bootstrapSize="lg"
+            app:buttonMode="regular"
+            app:roundedCorners="true"
+            app:showOutline="false" />
+    </LinearLayout>
+
+    <in.srain.cube.views.ptr.PtrFrameLayout
+        android:id="@+id/mPtrFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_View"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </in.srain.cube.views.ptr.PtrFrameLayout>
+
+</LinearLayout>

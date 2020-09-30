@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/blue_button_background"
+    tools:context="com.org.huanjianmvp.Activity.Inspection">
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="外观检验项"
+        android:enabled="false"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="lg"
+        app:buttonMode="regular"
+        app:roundedCorners="false"
+        app:showOutline="false" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/inspectRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bootstrap_brand_info"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="35dp"
+            >
+        </android.support.v7.widget.RecyclerView>
+        <!--<ListView
+            android:id="@+id/listSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ListView>-->
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/inspectCommit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentBottom="true"
+            android:text="提交数据"
+            app:bootstrapBrand="success"
+            app:bootstrapSize="md"
+            app:buttonMode="regular"
+            app:roundedCorners="false"
+            app:showOutline="false" />
+    </RelativeLayout>
+
+
+
+    <!--<com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/inspectCommit"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="提交数据"
+        app:bootstrapBrand="success"
+        app:bootstrapSize="md"
+        app:buttonMode="regular"
+        app:roundedCorners="false"
+        app:showOutline="false" />-->
+
+    <!--<com.beardedhen.androidbootstrap.BootstrapButton
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="外观检验"
+        android:enabled="false"
+        app:bootstrapBrand="info"
+        app:bootstrapSize="md"
+        app:buttonMode="regular"
+        app:roundedCorners="false"
+        app:showOutline="false" />-->
+
+    <!--<android.support.v7.widget.RecyclerView
+        android:id="@+id/inspectRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+    </android.support.v7.widget.RecyclerView>-->
+
+</LinearLayout>
